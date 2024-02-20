@@ -61,7 +61,7 @@ public class HUMMEL_ENCODER {
                 String psw = pswField.getText();
                 try {
                     String result = SHUFFLE_CYPHER.Hummelnest_Dectrypter(text, psw);
-                    resultArea.setText(result);
+                    resultArea.setText("[ DECODED TEXT ]\n" +result);
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 }
